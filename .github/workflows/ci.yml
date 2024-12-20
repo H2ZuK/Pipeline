@@ -1,0 +1,41 @@
+name: CI/CD for JavaScript, HTML, and CSS Project
+
+on:
+  push:
+    branches:
+      - main  # Triggers when code is pushed to the main branch
+  pull_request:
+    branches:
+      - main  # Triggers on pull requests to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Runner environment
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install  # Use this if you have Node.js dependencies
+
+      - name: Run ESLint (JavaScript Linter)
+        run: npm run lint
+
+      - name: Run tests (optional)
+        run: npm test
+
+      - name: Build project (optional)
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./dist
