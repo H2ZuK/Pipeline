@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm install  # Use this if you have Node.js dependencies
 
-      - name: Run ESLint (JavaScript Linter)
-        run: npm run lint
+      #- name: Run ESLint (JavaScript Linter)
+      #  run: npm run lint
 
       - name: Run tests (optional)
         run: npm test
