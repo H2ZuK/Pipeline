@@ -1,0 +1,109 @@
+/* Existing CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    display: flex; /* Makes the list items appear in a row */
+    padding: 0; /* Removes default padding */
+    list-style-type: none; /* Removes the default list bullets */
+    margin: 0 0 0 12%; /* Removes default margin */
+}
+
+nav ul li {
+    margin: 2% 0 0 10%; /* Adds space between the items */
+    background-color: whitesmoke;
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets the color of the links */
+    padding: 10px; /* Adds some padding around the links */
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Changes link color on hover */
+}
+
+.container {
+    margin: 3% 0 0 0;
+    background-color: whitesmoke;
+    width: 100%;
+    height: max-content;
+    
+}
+
+.sub-container {
+
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-top: 1% ;
+    background-color: rgb(152, 149, 149);
+}
+
+.image-holder-left{
+    
+    height: 80%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.image-holder-right{
+    
+    height: 80%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+.text-container{
+    margin-top: 5%;
+}
+
+
+
+
+
+
+/* New Footer CSS */
+footer {
+    margin-top: 3%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+footer p {
+    font-size: 14px;
+}

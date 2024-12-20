@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    display: flex; /* Makes the list items appear in a row */
+    padding: 0; /* Removes default padding */
+    list-style-type: none; /* Removes the default list bullets */
+    margin: 0 0 0 12%; /* Removes default margin */
+    
+  }
+  
+  nav ul li {
+    margin: 2% 0 0 10%; /* Adds space between the items */
+    background-color: whitesmoke;
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets the color of the links */
+    padding: 10px; /* Adds some padding around the links */
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF; /* Changes link color on hover */
+  }
+  
+
