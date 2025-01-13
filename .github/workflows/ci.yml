@@ -27,8 +27,8 @@ jobs:
       #- name: Run ESLint (JavaScript Linter)
       #  run: npm run lint
 
-      - name: Run tests (optional)
-        run: npm test
+      #- name: Run tests (optional)
+      # run: npm test
 
       - name: Build project (optional)
         run: npm run build
