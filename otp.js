@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-const auth = getAuth(app);
+
 
 const verify = document.getElementById('verify');
 verify.addEventListener("click", function (event){
